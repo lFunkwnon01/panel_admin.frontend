@@ -1,5 +1,5 @@
 import React from 'react';
-import { LayoutDashboard, Calendar, Users, Ticket, Globe, Settings, FileText, LogOut } from 'lucide-react';
+import { LayoutDashboard, Calendar, Users, Ticket, Globe, Settings, FileText, LogOut, Zap } from 'lucide-react';
 
 interface SidebarProps {
   currentView: string;
@@ -13,6 +13,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentView, onChangeView, onL
     { id: 'events', label: 'Eventos', icon: Calendar },
     { id: 'partners', label: 'Socios', icon: Users },
     { id: 'benefits', label: 'Cupones / Beneficios', icon: Ticket },
+    { id: 'automation', label: 'Automatización', icon: Zap },
     { id: 'web', label: 'Contenido Web', icon: Globe },
     { id: 'leads', label: 'Leads / Solicitudes', icon: FileText },
     { id: 'settings', label: 'Configuración', icon: Settings },

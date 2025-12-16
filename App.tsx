@@ -5,6 +5,7 @@ import { Dashboard } from './pages/Dashboard';
 import { Events } from './pages/Events';
 import { Partners } from './pages/Partners';
 import { Benefits } from './pages/Benefits';
+import { Automation } from './pages/Automation';
 import { Login } from './pages/Login';
 import { Edit } from 'lucide-react';
 
@@ -81,6 +82,7 @@ const App: React.FC = () => {
       case 'events': return <Events />;
       case 'partners': return <Partners />;
       case 'benefits': return <Benefits />;
+      case 'automation': return <Automation />;
       case 'leads': return <LeadsPage />;
       case 'web': return <PlaceholderPage title="Contenido Web (CMS)" />;
       case 'settings': return <PlaceholderPage title="Configuración" />;
